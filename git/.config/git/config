@@ -1,21 +1,33 @@
-[alias]
-	co = checkout
-	br = branch
-	ci = commit
-	st = status
+    
 [pull]
 	rebase = true
+    
 [init]
 	defaultbranch = main
+    
 [user]
 	name = Firomsa Assefa
 	email = firomsassf@gmail.com
 	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJTtAkRUGWs1ayaoyLjMey0DoDQcsjUDo0Wii6iIAFup
+    
 [gpg]
 	format = ssh
+    
 [commit]
 	gpgsign = true
+    verbose = true
+    template = ~/.config/git/template
+    
 [gpg "ssh"]
 	allowedSignersFile = /home/firomsa/.ssh/allowedSigners
+    
 [push]
 	autoSetupRemote = true
+
+[core]
+    compression = 9
+    preloadindex = true
+    whitespace = error 
+    
+[url "git@github.com:firo1919/"]
+    insteadOf = "firo:"

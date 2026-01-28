@@ -50,6 +50,10 @@ alias g='git'
 alias gcm='git commit -m'
 alias gcam='git commit -a -m'
 alias gcad='git commit -a --amend'
+alias gs='git status --short'
+alias gcl='git clone'
+alias gi='git init'
+alias gl='git log'
 
 # Fzf
 alias pf="paru -Slq | fzf --multi --preview 'paru -Si {1}' | xargs -ro paru -S"
