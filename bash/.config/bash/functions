@@ -92,3 +92,15 @@ repo-list() {
         <(paru -Qeq | sort) \
         <(paru -Slq "$1" | sort)
 }
+
+# Create a python environment
+mkvenv() {
+    if [ -z "$1" ]; then
+        echo "Usage: mkvenv <env-name>"
+        return 1
+    fi
+
+    python -m venv "$1" || return 1
+    source "$1/bin/activate"
+}
+
