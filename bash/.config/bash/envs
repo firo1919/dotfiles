@@ -2,7 +2,9 @@
 export EDITOR=fresh
 export SUDO_EDITOR="$EDITOR"
 export BAT_THEME=ansi
-export SSH_AUTH_SOCK=/home/firomsa/.bitwarden-ssh-agent.sock
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/rbw/ssh-agent-socket"
 export MANPAGER='less --use-color -Dd+r -Du+b'
 export MANROFFOPT='-P -c'
 export TERMINAL='ghostty'
+export SOPS_AGE_KEY=$(rbw get age-secret)
+export SOPS_AGE_RECIPIENTS=$(rbw get age-public)
