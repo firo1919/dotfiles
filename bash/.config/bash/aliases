@@ -43,7 +43,7 @@ alias gen-secret='openssl rand -hex 32'
 alias y='yazi'
 alias dl='lazydocker'
 alias pipinstall='pip install -r requirements.txt'
-n() { if [ "$#" -eq 0 ]; then nvim .; else nvim "$@"; fi; }
+alias zed='zeditor'
 
 # Git
 alias g='git'
