@@ -1,0 +1,6 @@
+[Unit]
+Description=Rclone Automated Sync
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash /home/firomsa/Personal/scripts/rclone-sync.sh
