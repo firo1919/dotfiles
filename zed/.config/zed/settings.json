@@ -19,8 +19,8 @@
     "enabled": true,
     "coloring": "indent_aware",
   },
-  "features": {
-    "edit_prediction_provider": "copilot",
+  "edit_predictions":{
+    "provider":"copilot"
   },
   "wrap_guides": [100],
   "show_wrap_guides": true,
