@@ -1,6 +1,6 @@
 {
   "auto_update_extensions": {
-    "java": false
+    "java": false,
   },
   "toolbar": {
     "breadcrumbs": false,
@@ -19,8 +19,8 @@
     "enabled": true,
     "coloring": "indent_aware",
   },
-  "edit_predictions":{
-    "provider":"copilot"
+  "edit_predictions": {
+    "provider": "copilot",
   },
   "wrap_guides": [100],
   "show_wrap_guides": true,
@@ -31,11 +31,11 @@
   "buffer_font_weight": 400.0,
   "buffer_font_family": "CaskaydiaMono Nerd Font",
   "ui_font_family": "CaskaydiaMono Nerd Font",
-  "git":{
-    "git_gutter":"tracked_files",
-    "inline_blame":{
-      "enabled": true
-    }
+  "git": {
+    "git_gutter": "tracked_files",
+    "inline_blame": {
+      "enabled": true,
+    },
   },
   "agent": {
     "default_profile": "write",
@@ -65,5 +65,22 @@
     "mode": "system",
     "light": "One Light",
     "dark": "Tokyo Night",
+  },
+  "languages": {
+    "Java": {
+      "formatter": "language_server",
+    },
+  },
+  "lsp": {
+    "jdtls": {
+      "initialization_options": {
+        "settings": {
+          "java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
+        },
+        "format": {
+          "enabled": true,
+        },
+      },
+    },
   },
 }

@@ -1,0 +1,85 @@
+{
+    "editor.fontFamily": "CaskaydiaMono Nerd Font",
+    "editor.fontSize": 14,
+    "editor.cursorBlinking": "phase",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.bracketPairColorization.enabled": true,
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "editor.fontLigatures": false,
+    "editor.linkedEditing": true,
+    "editor.snippetSuggestions": "top",
+    "editor.formatOnSave": true,
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 100,
+    "editor.fontVariations": false,
+    "editor.detectIndentation": false,
+    "emmet.preferences": {},
+    "editor.quickSuggestions": {
+        "comments": "on",
+        "strings": "inline",
+    },
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact",
+    },
+    "emmet.triggerExpansionOnTab": true,
+    "files.autoSave": "onFocusChange",
+    "files.associations": {
+        "*.css": "tailwindcss",
+    },
+    "github.copilot.enable": {
+        "plaintext": true,
+        "markdown": true,
+        "scminput": true,
+    },
+    "java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
+    "java.format.settings.profile": "GoogleStyle",
+    "prettier.tabWidth": 4,
+    "breadcrumbs.enabled": false,
+    "workbench.editor.empty.hint": "hidden",
+    "workbench.activityBar.location": "top",
+    "workbench.sideBar.location": "right",
+    "window.menuBarVisibility": "compact",
+    "workbench.editor.showTabs": "none",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.statusBar.visible": true,
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "workbench.colorTheme": "Tokyo Night",
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
+    "[markdown]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
+    "[scss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
+    "[java]": {
+        "editor.defaultFormatter": "redhat.java",
+    },
+    "[bash]": {
+        "editor.defaultFormatter": "foxundermoon.shell-format",
+    },
+    "redhat.telemetry.enabled": false,
+}
