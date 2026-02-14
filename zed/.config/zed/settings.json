@@ -41,7 +41,7 @@
     "default_profile": "write",
     "default_model": {
       "provider": "copilot_chat",
-      "model": "gpt-5",
+      "model": "gpt-5.3-codex",
     },
     "favorite_models": [],
     "model_parameters": [],
