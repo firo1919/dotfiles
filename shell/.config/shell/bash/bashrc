@@ -1,0 +1,6 @@
+[ -f "${XDG_CONFIG_HOME:-$HOME/.config}/shell/core/envs" ] && . "${XDG_CONFIG_HOME:-$HOME/.config}/shell/core/envs"
+[ -f "${XDG_CONFIG_HOME:-$HOME/.config}/shell/core/aliases" ] && . "${XDG_CONFIG_HOME:-$HOME/.config}/shell/core/aliases"
+[ -f "${XDG_CONFIG_HOME:-$HOME/.config}/shell/core/functions" ] && . "${XDG_CONFIG_HOME:-$HOME/.config}/shell/core/functions"
+[ -f "${XDG_CONFIG_HOME:-$HOME/.config}/shell/bash/shell" ] && . "${XDG_CONFIG_HOME:-$HOME/.config}/shell/bash/shell"
+[ -f "${XDG_CONFIG_HOME:-$HOME/.config}/shell/bash/init" ] && . "${XDG_CONFIG_HOME:-$HOME/.config}/shell/bash/init"
+[ -f "${XDG_CONFIG_HOME:-$HOME/.config}/shell/bash/inputrc" ] && bind -f "${XDG_CONFIG_HOME:-$HOME/.config}/shell/bash/inputrc"

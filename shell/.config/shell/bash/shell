@@ -1,0 +1,19 @@
+[[ $- == *i* ]] && [ -f /usr/share/blesh/ble.sh ] && . /usr/share/blesh/ble.sh --noattach
+[[ ${BLE_VERSION-} ]] && ble-attach
+[[ ${BLE_VERSION-} ]] && ble-face -s auto_complete 'fg=8'
+
+# History control
+shopt -s histappend
+HISTCONTROL=ignoreboth
+HISTSIZE=1000
+HISTFILESIZE="${HISTSIZE}"
+
+# Autocompletion
+if [[ ! -v BASH_COMPLETION_VERSINFO && -f /usr/share/bash-completion/bash_completion ]]; then
+  . /usr/share/bash-completion/bash_completion
+fi
+
+[[ $- == *i* ]] && [ -f "${XDG_CONFIG_HOME:-$HOME/.config}/shell/bash/inputrc" ] && bind -f "${XDG_CONFIG_HOME:-$HOME/.config}/shell/bash/inputrc"
+
+# Ensure command hashing is off for mise
+set +h

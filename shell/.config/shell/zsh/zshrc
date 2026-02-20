@@ -1,0 +1,5 @@
+[ -f "${XDG_CONFIG_HOME:-$HOME/.config}/shell/core/envs" ] && . "${XDG_CONFIG_HOME:-$HOME/.config}/shell/core/envs"
+[ -f "${XDG_CONFIG_HOME:-$HOME/.config}/shell/core/aliases" ] && . "${XDG_CONFIG_HOME:-$HOME/.config}/shell/core/aliases"
+[ -f "${XDG_CONFIG_HOME:-$HOME/.config}/shell/core/functions" ] && . "${XDG_CONFIG_HOME:-$HOME/.config}/shell/core/functions"
+[ -f "${XDG_CONFIG_HOME:-$HOME/.config}/shell/zsh/shell" ] && . "${XDG_CONFIG_HOME:-$HOME/.config}/shell/zsh/shell"
+[ -f "${XDG_CONFIG_HOME:-$HOME/.config}/shell/zsh/init" ] && . "${XDG_CONFIG_HOME:-$HOME/.config}/shell/zsh/init"

@@ -5,4 +5,4 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-source ~/.config/bash/rc
+source ~/.config/shell/bash/bashrc

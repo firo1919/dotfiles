@@ -12,6 +12,7 @@
     "editor.wordWrapColumn": 100,
     "editor.fontVariations": false,
     "editor.detectIndentation": false,
+    "security.workspace.trust.enabled": false,
     "emmet.preferences": {},
     "editor.quickSuggestions": {
         "comments": "on",
@@ -80,4 +81,5 @@
         "editor.defaultFormatter": "foxundermoon.shell-format",
     },
     "redhat.telemetry.enabled": false,
+    "git.confirmSync": false,
 }
