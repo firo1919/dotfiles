@@ -6,7 +6,6 @@ if command -v eza >/dev/null 2>&1; then
   alias lta='lt -a'
 fi
 
-alias ff="fzf --preview 'bat --style=numbers --color=always {}'"
 
 if command -v zoxide >/dev/null 2>&1; then
   alias cd="zd"
@@ -31,9 +30,7 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 
 # Tools
-alias c='opencode'
 alias d='docker'
-alias r='rails'
 alias rm='trash'
 alias c='clear'
 alias rc='rclone rcd --rc-web-gui'
@@ -53,7 +50,10 @@ alias gcad='git commit -a --amend'
 alias gs='git status --short'
 alias gcl='git clone'
 alias gi='git init'
+alias gp='git pull'
+alias gpu='git push'
 alias gl='git log'
 
 # Fzf
 alias pf="paru -Slq | fzf --multi --preview 'paru -Si {1}' | xargs -ro paru -S"
+alias ff="fzf --preview 'bat --style=numbers --color=always {}'"
