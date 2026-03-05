@@ -27,6 +27,7 @@
         "*.css": "tailwindcss",
     },
     "github.copilot.enable": {
+        "*": false,
         "plaintext": true,
         "markdown": true,
         "scminput": true,
@@ -38,7 +39,6 @@
     "workbench.editor.empty.hint": "hidden",
     "workbench.activityBar.location": "top",
     "workbench.sideBar.location": "right",
-    "window.menuBarVisibility": "compact",
     "workbench.editor.showTabs": "none",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.statusBar.visible": true,
@@ -82,4 +82,9 @@
     },
     "redhat.telemetry.enabled": false,
     "git.confirmSync": false,
+    "chat.tools.terminal.autoApprove": {
+        "mvn clean": true,
+    },
+    "terminal.integrated.initialHint": false,
+    "git.openRepositoryInParentFolders": "always",
 }
