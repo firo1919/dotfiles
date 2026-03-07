@@ -1,0 +1,11 @@
+[Unit]
+Description=Run YT Music Sync Periodically
+
+[Timer]
+OnBootSec=2min
+OnUnitActiveSec=2hr
+Persistent=true
+Unit=ytmusic-sync.service
+
+[Install]
+WantedBy=timers.target

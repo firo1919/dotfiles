@@ -126,3 +126,36 @@ tunnel() {
 
     cloudflared tunnel --url "http://localhost:$1"
 }
+
+ytmusic() {
+  if [ -z "$1" ]; then
+    echo "Usage: ytmusic <youtube-playlist-or-video-url>"
+    return 1
+  fi
+
+  yt-dlp \
+    --sleep-interval 10 \
+    --sleep-requests 2 \
+    -x \
+    --embed-metadata \
+    --embed-thumbnail \
+    --download-archive "ytmusic_archive.txt" \
+    -o "%(title)s.%(ext)s" \
+    "$1"
+}
+
+ytvideo() {
+  if [ -z "$1" ]; then
+    echo "Usage: ytvideo <youtube-video-url>"
+    return 1
+  fi
+
+  yt-dlp \
+    --sleep-interval 10 \
+    --sleep-requests 2 \
+    --embed-metadata \
+    --embed-thumbnail \
+    --download-archive "ytvideo_archive.txt" \
+    -o "%(title)s.%(ext)s" \
+    "$1"
+}

@@ -1,0 +1,6 @@
+[Unit]
+Description=YT music Automated Sync
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash ${HOME}/Personal/scripts/sync_music.sh
