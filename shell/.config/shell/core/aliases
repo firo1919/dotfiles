@@ -41,6 +41,7 @@ alias y='yazi'
 alias dl='lazydocker'
 alias pipinstall='pip install -r requirements.txt'
 alias zed='zeditor'
+alias list-backups='restic snapshots -r rclone:EncryptedGoogleDrive:Backups --password-command "rbw get restic-pass"'
 
 # Git
 alias g='git'

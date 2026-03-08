@@ -87,4 +87,7 @@
     },
     "terminal.integrated.initialHint": false,
     "git.openRepositoryInParentFolders": "always",
+    "[dockercompose]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml",
+    },
 }

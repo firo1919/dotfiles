@@ -1,0 +1,6 @@
+[Unit]
+Description=Restic Automated Backup
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash ${HOME}/Personal/scripts/restic-backup.sh
