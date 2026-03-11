@@ -45,6 +45,7 @@ alias list-backups='restic snapshots -r rclone:EncryptedGoogleDrive:Backups --pa
 
 # Git
 alias g='git'
+alias ga='git add'
 alias gcm='git commit -m'
 alias gcam='git commit -a -m'
 alias gcad='git commit -a --amend'
