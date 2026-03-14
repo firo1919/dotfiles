@@ -118,6 +118,13 @@ load_env() {
     fi
 }
 
+load_sops() {
+    if command -v rbw >/dev/null 2>&1; then
+        export SOPS_AGE_KEY="$(rbw get age-secret)"
+        export SOPS_AGE_RECIPIENTS="$(rbw get age-public)"
+    fi
+}
+
 tunnel() {
     if [ -z "$1" ]; then
         echo "Usage: tunnel <port>"

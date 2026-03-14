@@ -6,12 +6,3 @@ export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/rbw/ssh-agent-socket"
 export MANPAGER='less --use-color -Dd+r -Du+b'
 export MANROFFOPT='-P -c'
 export TERMINAL='ghostty'
-
-case "$-" in
-  *i*)
-    if command -v rbw >/dev/null 2>&1; then
-      export SOPS_AGE_KEY="$(rbw get age-secret)"
-      export SOPS_AGE_RECIPIENTS="$(rbw get age-public)"
-    fi
-    ;;
-esac
