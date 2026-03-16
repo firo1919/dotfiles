@@ -2,7 +2,7 @@
 Description=Run Restic Backup Periodically
 
 [Timer]
-OnBootSec=2min
+OnStartupSec=2min
 OnUnitActiveSec=2hr
 Persistent=true
 Unit=restic-backup.service

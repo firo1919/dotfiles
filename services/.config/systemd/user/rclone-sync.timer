@@ -2,7 +2,7 @@
 Description=Run Rclone Sync Periodically
 
 [Timer]
-OnBootSec=2min
+OnStartupSec=2min
 OnUnitActiveSec=2hr
 Persistent=true
 Unit=rclone-sync.service

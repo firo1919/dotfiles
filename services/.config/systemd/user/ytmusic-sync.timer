@@ -2,7 +2,7 @@
 Description=Run YT Music Sync Periodically
 
 [Timer]
-OnBootSec=2min
+OnStartupSec=2min
 OnUnitActiveSec=2hr
 Persistent=true
 Unit=ytmusic-sync.service
