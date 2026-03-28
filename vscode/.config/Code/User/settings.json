@@ -32,7 +32,7 @@
         "markdown": true,
         "scminput": true,
     },
-    "java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
+    "java.format.settings.url": "https://raw.githubusercontent.com/redhat-developer/vscode-java/refs/heads/main/formatters/eclipse-formatter.xml",
     "java.format.settings.profile": "GoogleStyle",
     "prettier.tabWidth": 4,
     "breadcrumbs.enabled": false,
