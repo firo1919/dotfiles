@@ -4,5 +4,8 @@
   "editor": {
     "cursor_style": "blinking_bar"
   },
-  "active_keybinding_map": "vscode"
+  "active_keybinding_map": "vscode",
+  "file_explorer": {
+    "show_hidden": true
+  }
 }
