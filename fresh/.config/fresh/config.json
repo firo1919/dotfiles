@@ -1,11 +1,67 @@
 {
-  "version": 1,
+  "version": 2,
   "theme": "tokyo-night-alt",
   "editor": {
     "cursor_style": "blinking_bar"
   },
-  "active_keybinding_map": "vscode",
   "file_explorer": {
     "show_hidden": true
+  },
+  "active_keybinding_map": "vscode",
+  "lsp": {
+    "python": {
+      "enabled": false,
+      "auto_start": false,
+      "process_limits": {
+        "max_memory_percent": 50,
+        "max_cpu_percent": 90,
+        "enabled": true
+      }
+    },
+    "java": {
+      "enabled": false,
+      "auto_start": false,
+      "process_limits": {
+        "max_memory_percent": 50,
+        "max_cpu_percent": 90,
+        "enabled": true
+      }
+    },
+    "bash": {
+      "enabled": false,
+      "auto_start": false,
+      "process_limits": {
+        "max_memory_percent": 50,
+        "max_cpu_percent": 90,
+        "enabled": true
+      }
+    },
+    "markdown": {
+      "enabled": false,
+      "auto_start": false,
+      "process_limits": {
+        "max_memory_percent": 50,
+        "max_cpu_percent": 90,
+        "enabled": true
+      }
+    },
+    "php": {
+      "enabled": false,
+      "auto_start": false,
+      "process_limits": {
+        "max_memory_percent": 50,
+        "max_cpu_percent": 90,
+        "enabled": true
+      }
+    },
+    "yaml": {
+      "enabled": false,
+      "auto_start": false,
+      "process_limits": {
+        "max_memory_percent": 50,
+        "max_cpu_percent": 90,
+        "enabled": true
+      }
+    }
   }
 }

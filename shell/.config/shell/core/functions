@@ -206,3 +206,8 @@ pacr(){
       echo "$pkg_names" | tr '\n' ' ' | xargs paru -Rns --noconfirm
     fi
 }
+
+
+convert-pdf(){
+    libreoffice --headless --convert-to pdf "${@:-.}"
+}

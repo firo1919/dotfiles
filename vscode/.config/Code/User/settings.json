@@ -27,7 +27,7 @@
         "*.css": "tailwindcss",
     },
     "github.copilot.enable": {
-        "*": true,
+        "*": false,
         "plaintext": true,
         "markdown": true,
         "scminput": true,
@@ -42,7 +42,7 @@
     "workbench.editor.showTabs": "none",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.statusBar.visible": true,
-    "github.copilot.nextEditSuggestions.enabled": true,
+    "github.copilot.nextEditSuggestions.enabled": false,
     "workbench.colorTheme": "Tokyo Night",
     "[jsonc]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -91,4 +91,8 @@
         "editor.defaultFormatter": "redhat.vscode-yaml",
     },
     "chat.viewSessions.orientation": "stacked",
+    "markdown.marp.html": "all",
+    "explorer.confirmPasteNative": false,
+    "claudeCode.preferredLocation": "panel",
+    "copilot-pacer.username": "firo1919",
 }
