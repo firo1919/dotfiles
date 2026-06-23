@@ -18,6 +18,7 @@
         "comments": "on",
         "strings": "inline",
     },
+    "terminal.integrated.enableVisualBell": true,
     "emmet.includeLanguages": {
         "javascript": "javascriptreact",
     },
@@ -95,4 +96,5 @@
     "explorer.confirmPasteNative": false,
     "claudeCode.preferredLocation": "panel",
     "copilot-pacer.username": "firo1919",
+    "claudeCode.allowDangerouslySkipPermissions": true,
 }

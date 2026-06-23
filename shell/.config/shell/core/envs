@@ -6,3 +6,4 @@ export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/rbw/ssh-agent-socket"
 export MANPAGER='less --use-color -Dd+r -Du+b'
 export MANROFFOPT='-P -c'
 export TERMINAL='ghostty'
+export PATH="$HOME/.local/bin:$PATH"
