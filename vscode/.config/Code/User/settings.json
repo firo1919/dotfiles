@@ -97,4 +97,13 @@
     "claudeCode.preferredLocation": "panel",
     "copilot-pacer.username": "firo1919",
     "claudeCode.allowDangerouslySkipPermissions": true,
+    "yaml.disableSchemaDetection": [
+        "**/.github/workflows/*.yml",
+        "**/.github/workflows/*.yaml",
+        "**/.gitea/workflows/*.yml",
+        "**/.gitea/workflows/*.yaml",
+        "**/.forgejo/workflows/*.yml",
+        "**/.forgejo/workflows/*.yaml",
+    ],
+    "js/ts.updateImportsOnFileMove.enabled": "always",
 }

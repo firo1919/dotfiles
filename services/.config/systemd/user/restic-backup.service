@@ -3,4 +3,5 @@ Description=Restic Automated Backup
 
 [Service]
 Type=oneshot
+Restart=on-failure
 ExecStart=/bin/bash ${HOME}/Personal/scripts/restic-backup.sh
