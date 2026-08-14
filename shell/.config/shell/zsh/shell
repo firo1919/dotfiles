@@ -17,6 +17,11 @@ else
 fi
 
 # AutoSuggestions
+# Enable case-insensitive matching for Zsh completions
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
+
+# Tell zsh-autosuggestions to use the completion system
+ZSH_AUTOSUGGEST_STRATEGY=(completion)
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=8'
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 

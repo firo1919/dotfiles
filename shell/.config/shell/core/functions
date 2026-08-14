@@ -211,3 +211,30 @@ pacr(){
 convert-pdf(){
     libreoffice --headless --convert-to pdf "${@:-.}"
 }
+
+mifi_restart() {
+    local file="${1:-wan}"
+    if [ "$file" = "reset" ]; then
+        read -p "This will reboot the router. Continue? [y/N] " confirm
+        [[ "$confirm" =~ ^[Yy]$ ]] || return 1
+    fi
+    /home/firomsa/Personal/scripts/mifi.sh "$file"
+}
+
+create_sandbox() {
+    if [ -z "$1" ]; then
+        echo "Usage: create_sandbox <sandbox-name>" >&2
+        return 1
+    fi
+    local name="$1"
+
+    if sbx ls | awk '{print $1}' | grep -qx "$name"; then
+        echo "Sandbox '$name' already exists — reattaching..."
+    else
+        echo "Creating sandbox '$name'..."
+        sbx create --name "$name" \
+            --kit git+https://github.com/shelajev/agy-sbx-kit.git agy .
+    fi
+
+    sbx run --name "$name"
+}
