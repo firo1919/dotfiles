@@ -140,3 +140,10 @@ capsule_fill = "on_primary"
 inactive_pill_size = 1.0
 pill_scale = 0.80
 show_labels = false
+
+[widget.switch_users]
+glyph = "users"
+type = "custom_button"
+
+    [widget.switch_users.actions]
+    left = "exec exec gdbus call --system --dest org.gnome.DisplayManager --object-path /org/gnome/DisplayManager/LocalDisplayFactory --method org.gnome.DisplayManager.LocalDisplayFactory.CreateTransientDisplay"

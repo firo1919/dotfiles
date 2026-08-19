@@ -1,1 +1,5 @@
-fresh/.config/fresh/types/*
+# Fresh Editor - only track config.json and themes/
+fresh/.config/fresh/*
+!fresh/.config/fresh/config.json
+!fresh/.config/fresh/themes/
+!fresh/.config/fresh/themes/**
