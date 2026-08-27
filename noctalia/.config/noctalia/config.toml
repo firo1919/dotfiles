@@ -38,10 +38,10 @@ settings_show_advanced = true
     session_position = "center"
 
     [shell.screenshot]
-    copy_to_clipboard = false
+    copy_to_clipboard = true
     pipe_command = "satty -f -"
     pipe_to_command = true
-    save_to_file = false
+    save_to_file = true
 
     [[shell.session.actions]]
     action = "lock"
@@ -91,7 +91,7 @@ wallpaper_scheme = "m3-tonal-spot"
 
 [widget.clock]
 color = "secondary"
-format = "{:%H:%M %A %m/%d/%y}"
+format = "{:%H:%M, %B %d/%Y}"
 
 [widget.launcher]
 color = "secondary"

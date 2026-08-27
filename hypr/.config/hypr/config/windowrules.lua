@@ -51,7 +51,7 @@ hl.window_rule({ match = { class = "^(ghostty|com\\.mitchellh\\.ghostty)$" }, wo
 hl.window_rule({ match = { class = "^(code|Code|code-url-handler|jetbrains-studio|android-studio|antigravity|Antigravity|antigravity-ide|Postman|postman)$" }, workspace = 3 })
 hl.window_rule({ match = { class = "^(org\\.telegram\\.desktop|telegram-desktop|TelegramDesktop)$" }, workspace = 4 })
 hl.window_rule({ match = { class = "^(io\\.bassi\\.Amberol|amberol|ambrelo|Amberol|spotify|Spotify)$" }, workspace = 6 })
-hl.window_rule({ match = { class = "^(Todoist|todoist|obsidian|Obsidian)$" }, workspace = 7 })
+hl.window_rule({ match = { class = "^(Todoist|todoist|obsidian|Obsidian|ONLYOFFICE|DesktopEditors)$" }, workspace = 7 })
 
 -- Apps
 hl.window_rule({ match = { class = "^(.*\\.exe)$", float = true }, monitor = PRIMARY_MONITOR, center = true, fullscreen_state = 0 })

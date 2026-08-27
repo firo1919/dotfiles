@@ -80,7 +80,6 @@ hl.bind(mainMod .. " + X",          hl.dsp.exec_cmd(noctCall .. "panel-toggle co
 hl.bind(mainMod .. " + Space",      hl.dsp.exec_cmd(noctCall .. "panel-toggle launcher"))
 hl.bind(mainMod .. " + period",     hl.dsp.exec_cmd(noctCall .. "panel-toggle launcher /emo"))
 hl.bind(mainMod .. " + L",          hl.dsp.exec_cmd(noctCall .. "session lock"))
-hl.bind(mainMod .. " + SHIFT + L",  hl.dsp.exec_cmd("gdbus call --system --dest org.gnome.DisplayManager --object-path /org/gnome/DisplayManager/LocalDisplayFactory --method org.gnome.DisplayManager.LocalDisplayFactory.CreateTransientDisplay"))
 hl.bind(mainMod .. " + ALT + C",    hl.dsp.exec_cmd(noctCall .. "panel-toggle session"))
 
 ---------------------------
@@ -107,11 +106,12 @@ hl.bind("XF86MonBrightnessDown", hl.dsp.exec_cmd(noctCall .. "brightness-down"),
 ---- UTILITIES ----
 -------------------
 
--- Screen Capture
-hl.bind(mainMod .. " + P",     hl.dsp.exec_cmd("hyprpicker -a -n"))
-hl.bind("Print",               hl.dsp.exec_cmd(noctCall .. "screenshot-region"))
-hl.bind(mainMod .. " + Print", hl.dsp.exec_cmd(noctCall .. "screenshot-fullscreen"))
-
+-- Screen Capture & OCR
+hl.bind(mainMod .. " + P",         hl.dsp.exec_cmd("hyprpicker -a -n"))
+hl.bind("Print",                   hl.dsp.exec_cmd(noctCall .. "screenshot-region"))
+hl.bind(mainMod .. " + Print",     hl.dsp.exec_cmd(noctCall .. "screenshot-fullscreen"))
+hl.bind(mainMod .. " + SHIFT + O", hl.dsp.exec_cmd(launchPrefix .. "/home/firomsa/Personal/scripts/ocr-copy"))
+hl.bind(mainMod .. " + O",         hl.dsp.exec_cmd(launchPrefix .. "/home/firomsa/Personal/scripts/ocr-copy"))
 -- Theming and Wallpaper
 hl.bind(mainMod .. " + SHIFT + W", hl.dsp.exec_cmd(noctCall .. "panel-toggle wallpaper"))
 
@@ -121,6 +121,9 @@ hl.bind(mainMod .. " + V", hl.dsp.exec_cmd(noctCall .. "panel-toggle clipboard")
 -- Notifications
 hl.bind(mainMod .. " + A", hl.dsp.exec_cmd(noctCall .. "panel-toggle control-center notifications"))
 
+
+-- Voxtype (Voice typing push-to-talk)
+hl.bind("INSERT", hl.dsp.exec_cmd("voxtype record toggle"))
 -------------------------------
 ---- WORKSPACES & MONITORS ----
 -------------------------------

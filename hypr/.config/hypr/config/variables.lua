@@ -1,7 +1,7 @@
 -- Hyprland default apps
 
 TERMINAL     = "ghostty"
-FILE_MANAGER = "nautilus"
+FILE_MANAGER = "thunar"
 BROWSER      = "helium-browser"
 EDITOR       = "gnome-text-editor --new-window"
 CALCULATOR   = "gnome-calculator"
