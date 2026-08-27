@@ -216,7 +216,7 @@
                 {
                     "id": "CustomButton",
                     "icon": "system-switch-user",
-                    "leftClickExec": "gdbus call --system --dest org.gnome.DisplayManager --object-path /org/gnome/DisplayManager/LocalDisplayFactory --method org.gnome.DisplayManager.LocalDisplayFactory.CreateTransientDisplay"
+                    "leftClickExec": "gdbus call --system --dest org.freedesktop.DisplayManager --object-path /org/freedesktop/DisplayManager/Seat0 --method org.freedesktop.DisplayManager.Seat.SwitchToGreeter"
                 }
             ]
         }
