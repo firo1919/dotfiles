@@ -103,10 +103,58 @@ enabled = [ "noctalia/screen_recorder", "noctalia/notes", "nightwatch75/dns-swit
 [shell]
 corner_radius_scale = 0.0
 font_family = "Noto Sans"
-
+show_shortcuts = false
     [shell.animation]
     enabled = false
     speed = 0.5000000074505806
+
+    [shell.panel]
+    session_placement = "floating"
+    session_position = "center"
+
+    [[shell.session.actions]]
+    action = "lock"
+    countdown_seconds = 0.0
+    enabled = true
+    shortcut = "1"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "logout"
+    countdown_seconds = 0.0
+    enabled = true
+    shortcut = "2"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "command"
+    command = "exec sh -c 'noctalia msg session lock; sleep 0.2; gdbus call --system --dest org.freedesktop.DisplayManager --object-path /org/freedesktop/DisplayManager/Seat0 --method org.freedesktop.DisplayManager.Seat.SwitchToGreeter'"
+    countdown_seconds = 0.0
+    enabled = true
+    glyph = "users"
+    label = "Switch User"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "lock_and_suspend"
+    countdown_seconds = 0.0
+    enabled = false
+    shortcut = "3"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "reboot"
+    countdown_seconds = 0.0
+    enabled = true
+    shortcut = "4"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "shutdown"
+    countdown_seconds = 0.0
+    enabled = true
+    shortcut = "5"
+    variant = "destructive"
 
 [theme]
 builtin = "Tokyo-Night"
@@ -143,13 +191,6 @@ type = "noctalia/notes:notes"
 [widget.recorder]
 type = "noctalia/screen_recorder:recorder"
 
-[widget.switch_users]
-glyph = "users"
-tooltip = "switch user"
-type = "custom_button"
-
-    [widget.switch_users.actions]
-    left = "exec sh -c 'noctalia msg session lock; sleep 0.2; gdbus call --system --dest org.freedesktop.DisplayManager --object-path /org/freedesktop/DisplayManager/Seat0 --method org.freedesktop.DisplayManager.Seat.SwitchToGreeter'"
 
 [widget.workspaces]
 show_labels = false
