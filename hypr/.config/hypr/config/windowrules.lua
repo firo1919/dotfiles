@@ -1,7 +1,7 @@
 -- Window rules wiki https://wiki.hypr.land/Configuring/Basics/Window-Rules/
 
 -- Generic floating position
-hl.window_rule({ match = { float = true }, center = true, persistent_size = true })
+hl.window_rule({ match = { float = true }, center = true, persistent_size = true, border_size = 0 })
 
 -- Picture-in-Picture
 hl.window_rule({
@@ -50,6 +50,52 @@ hl.window_rule({ match = { class = "^(helium-browser|Helium-browser|helium)$" },
 hl.window_rule({ match = { class = "^(ghostty|com\\.mitchellh\\.ghostty)$" }, workspace = 2 })
 hl.window_rule({ match = { class = "^(code|Code|code-url-handler|jetbrains-studio|android-studio|antigravity|Antigravity|antigravity-ide|Postman|postman)$" }, workspace = 3 })
 hl.window_rule({ match = { class = "^(org\\.telegram\\.desktop|telegram-desktop|TelegramDesktop)$" }, workspace = 4 })
+-- Browser Popups, Extensions & Webviews (Floating without borders)
+local browserClasses = "^(brave-browser|Brave-browser|helium-browser|Helium-browser|helium|chromium|Chromium|google-chrome|firefox|zen|chrome-.*|brave-.*)$"
+
+-- Match Chrome/Brave/Helium Extension Popups (e.g. Bitwarden _crx_ popups)
+hl.window_rule({
+    match = {
+        class = "^(chrome-.*|brave-.*|chromium-.*)$",
+    },
+    float = true,
+    center = true,
+    size = { 430, 620 },
+    border_size = 0,
+})
+
+hl.window_rule({
+    match = {
+        initial_title = "^(_crx_.*|chrome-extension://.*)$",
+    },
+    float = true,
+    center = true,
+    size = { 430, 620 },
+    border_size = 0,
+})
+
+-- Match browser dialogs that are not main browser tabs
+hl.window_rule({
+    match = {
+        class = browserClasses,
+        title = "negative:^(.*- (Brave|Helium|Chromium|Google Chrome|Mozilla Firefox|Firefox|Zen Browser))$",
+    },
+    float = true,
+    center = true,
+    border_size = 0,
+})
+
+hl.window_rule({
+    match = {
+        class = browserClasses,
+        title = "^(Extension:.*|.*Bitwarden.*|Bitwarden.*|Sign in.*|Log in.*|.*OAuth.*|.*Authentication.*|Open File.*|Save As.*|DevTools.*|.*[Pp]opup.*|.*dialog.*)$",
+    },
+    float = true,
+    center = true,
+    border_size = 0,
+})
+
+hl.window_rule({ match = { class = "^(Telegram)$" }, float = true, center = true, size = { 460, 680 }, border_size = 0 })
 hl.window_rule({ match = { class = "^(io\\.bassi\\.Amberol|amberol|ambrelo|Amberol|spotify|Spotify)$" }, workspace = 6 })
 hl.window_rule({ match = { class = "^(Todoist|todoist|obsidian|Obsidian|ONLYOFFICE|DesktopEditors)$" }, workspace = 7 })
 
